@@ -1,0 +1,92 @@
+server:
+  port: 7044
+  
+
+spring:
+  datasource:
+    sourceDT:
+      url: jdbc:mysql://192.168.1.190:3306/datacenter?useUnicode=true&characterEncoding=utf8&autoReconnect=true&rewriteBatchedStatements=true
+#      url: jdbc:mysql://localhost:3306/datacenter?useUnicode=true&characterEncoding=utf8&autoReconnect=true&rewriteBatchedStatements=true
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.jdbc.Driver
+      driverClassName: com.mysql.jdbc.Driver
+      type: org.apache.tomcat.jdbc.pool.DataSource
+      initialSize: 10
+      minIdle: 10
+      maxActive: 10
+      maxWait: 60000
+      timeBetweenEvictionRunsMillis: 20000
+      minEvictableIdleTimeMillis: 30000
+      validationInterval: 500
+      validationQuery: SELECT 1
+      testWhileIdle: true
+      testOnBorrow: true
+      testOnConnect: true
+      testOnReturn: true
+      poolPreparedStatements: true
+      maxPoolPreparedStatementPerConnectionSize: 20
+    sourceDD:
+      username: root 
+      url: jdbc:mysql://101.200.34.236:3304/datacenter?useUnicode=true&characterEncoding=utf8&autoReconnect=true&rewriteBatchedStatements=true
+      password: Jhh@123.com 
+      driver-class-name: com.mysql.jdbc.Driver
+      driverClassName: com.mysql.jdbc.Driver
+      type: org.apache.tomcat.jdbc.pool.DataSource
+      initialSize: 10
+      minIdle: 10
+      maxActive: 10
+      maxWait: 60000
+      timeBetweenEvictionRunsMillis: 20000
+      minEvictableIdleTimeMillis: 30000
+      validationInterval: 500
+      validationQuery: SELECT 1
+      testWhileIdle: true
+      testOnBorrow: true
+      testOnConnect: true
+      testOnReturn: true
+      poolPreparedStatements: true
+      maxPoolPreparedStatementPerConnectionSize: 20
+    targetDT:
+      username: root 
+      url: jdbc:mysql://192.168.1.190:3306/information?useUnicode=true&characterEncoding=UTF-8
+      password: Jhh.123.com 
+      driver-class-name: com.mysql.jdbc.Driver
+      driverClassName: com.mysql.jdbc.Driver
+      type: org.apache.tomcat.jdbc.pool.DataSource
+      initialSize: 10
+      minIdle: 10
+      maxActive: 10
+      maxWait: 60000
+      timeBetweenEvictionRunsMillis: 20000
+      minEvictableIdleTimeMillis: 30000
+      validationInterval: 500
+      validationQuery: SELECT 1
+      testWhileIdle: true
+      testOnBorrow: true
+      testOnConnect: true
+      testOnReturn: true
+      poolPreparedStatements: true
+      maxPoolPreparedStatementPerConnectionSize: 20      
+    targetDD:
+      url: jdbc:mysql://101.200.34.236:3304/tbl_common?useUnicode=true&characterEncoding=utf8&autoReconnect=true&rewriteBatchedStatements=true
+#      url: jdbc:mysql://localhost:3306/datacenter?useUnicode=true&characterEncoding=utf8&autoReconnect=true&rewriteBatchedStatements=true
+      username: root
+      password: Jhh@123.com
+      driver-class-name: com.mysql.jdbc.Driver
+      driverClassName: com.mysql.jdbc.Driver
+      type: org.apache.tomcat.jdbc.pool.DataSource
+      initialSize: 10
+      minIdle: 10
+      maxActive: 10
+      maxWait: 60000
+      timeBetweenEvictionRunsMillis: 20000
+      minEvictableIdleTimeMillis: 30000
+      validationInterval: 500
+      validationQuery: SELECT 1
+      testWhileIdle: true
+      testOnBorrow: true
+      testOnConnect: true
+      testOnReturn: true
+      poolPreparedStatements: true
+      maxPoolPreparedStatementPerConnectionSize: 20
